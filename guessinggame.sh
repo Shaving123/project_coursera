@@ -1,4 +1,4 @@
-echo "[Welcome to Guessing game v0.1]"
+echo "[Welcome to Guessing game ]"
 
 function ask {
 	echo "Please enter the number of files in the current directory:"
@@ -19,5 +19,5 @@ do
 	ask
 done
 
-echo "Well done! It is the correct answer, here is the list of files:"
+echo "Well done, here is the list of files:"
 echo "---" && ls -1
