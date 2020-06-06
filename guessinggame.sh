@@ -1,12 +1,12 @@
-echo "[Welcome to Guessing game ]"
+echo "############  Welcome to Guessing game ##############"
 
-function ask {
+function find {
 	echo "Please enter the number of files in the current directory:"
 	read guess
     files=$(ls -1 | wc -l)
 }
 
-ask
+find
 
 while [[ $guess -ne $files ]]
 do
@@ -16,8 +16,8 @@ do
 	else
 		echo "Too high."
 	fi
-	ask
+	find
 done
 
 echo "Well done, here is the list of files:"
-echo "---" && ls -1
+echo ">>>>" && ls -1
